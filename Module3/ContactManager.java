@@ -1,11 +1,9 @@
-package Module3;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ContactManager {
     public static void main(String[] args) {
-        HashMap<String, Contact> contacts = new HashMap<>(); 
+        HashMap<String, Contact> contacts = new HashMap<>();
 
         // add contacts here
         contacts.put("Kimuli Peter", new Contact("Kimuli Peter", "+1 617 202 8397"));
