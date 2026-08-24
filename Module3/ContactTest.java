@@ -4,10 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ContactTest {
     private Contact contact;
+    private Contact contact2;
 
     @BeforeEach
     public void setUp() {
         contact = new Contact("Ada Lovelace", "+1 617 555 0101");
+        contact2 = new Contact("Ada Lovelace", "+1 617 555 0101");
     }
 
     @Test
@@ -33,5 +35,10 @@ public class ContactTest {
     @Test
     public void toString_containsPhone() {
         assertTrue(contact.toString().contains("+1 617 555 0101"));
+    }
+
+    @Test
+    public void constructor_createsTwoIndependentObjectsWithSameName() {
+        assertNotEquals(contact2, contact);
     }
 }
