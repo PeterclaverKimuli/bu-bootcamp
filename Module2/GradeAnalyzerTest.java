@@ -42,4 +42,43 @@ public class GradeAnalyzerTest {
         assertEquals(88.0, GradeAnalyzer.calculateAverage(scores));
     }
 
+    @Test
+    public void getLetterGrade_returnsB_forScoreOf89() {
+        assertEquals("B", GradeAnalyzer.getLetterGrade(89));
+    }
+
+    @Test
+    public void getLetterGrade_returnsA_forScoreOf90() {
+        assertEquals("A", GradeAnalyzer.getLetterGrade(90));
+    }
+
+    @Test
+    public void getLetterGrade_returnsC_forScoreOf79() {
+        assertEquals("C", GradeAnalyzer.getLetterGrade(79));
+    }
+
+    @Test
+    public void getLetterGrade_returnsB_forScoreOf80() {
+        assertEquals("B", GradeAnalyzer.getLetterGrade(80));
+    }
+
+    @Test
+    public void getLetterGrade_returnsD_forScoreOf69() {
+        assertEquals("D", GradeAnalyzer.getLetterGrade(69));
+    }
+
+    @Test
+    public void getLetterGrade_returnsC_forScoreOf70() {
+        assertEquals("C", GradeAnalyzer.getLetterGrade(70));
+    }
+
+    @Test
+    public void getLetterGrade_returnsF_forScoreOf59() {
+        assertEquals("F", GradeAnalyzer.getLetterGrade(59));
+    }
+
+    @Test
+    public void getLetterGrade_returnsD_forScoreOf60() {
+        assertEquals("D", GradeAnalyzer.getLetterGrade(60));
+    }
 }

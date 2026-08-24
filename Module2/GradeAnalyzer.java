@@ -127,4 +127,17 @@ public class GradeAnalyzer {
             System.out.println("Could not read file: " + e.getMessage());
         }
     }
+
+    public static String getLetterGrade(int score) {
+        if (score > 89)
+            return "A";
+        else if (score > 79)
+            return "B";
+        else if (score > 69)
+            return "C";
+        else if (score > 59)
+            return "D";
+        else
+            return "F";
+    }
 }
